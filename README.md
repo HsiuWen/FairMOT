@@ -112,12 +112,6 @@ UA-DETRAC
    |        └——————test
    └——————labels_with_ids
             └——————train(empty)
-MOT20
-   |——————images
-   |        └——————train
-   |        └——————test
-   └——————labels_with_ids
-            └——————train(empty)
 ```
 
 ## Pretrained models and baseline model

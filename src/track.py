@@ -262,10 +262,16 @@ if __name__ == '__main__':
         data_root = os.path.join(opt.data_dir, 'MOT20/images/test')
     seqs = [seq.strip() for seq in seqs_str.split()]
 
+    if opt.test_ua_detrac:
+        seqs_str = '''MVI_39031
+
+        '''
+        data_root = os.path.join(opt.data_dir, 'UA-DETRAC/images/test')
+
     main(opt,
          data_root=data_root,
          seqs=seqs,
          exp_name='MOT17_test_public_dla34',
          show_image=False,
          save_images=False,
-         save_videos=False)
+         save_videos=True)
